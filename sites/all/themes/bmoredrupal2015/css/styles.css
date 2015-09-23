@@ -1028,4 +1028,21 @@ ul.primary li.active a {
     color: #fff;
 }
 
+.front #main-wrapper {
+    position: static;
+}
+
+.front #main-wrapper #content-wrap > div {
+    margin: 0 auto;
+    width: auto;
+}
+
+#highlights > div { 
+    width: auto;
+}
+
+.region.region-highlights .block.half-block {
+    width: 100%;
+}
+
 }
