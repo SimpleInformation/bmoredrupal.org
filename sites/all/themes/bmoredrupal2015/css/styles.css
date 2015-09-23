@@ -680,9 +680,11 @@ input.form-submit {
 }
 
 .region.region-highlights .block .highlight-info {
+    background: #2a95be none repeat scroll 0 0;
     float: left;
     height: 70px;
     overflow: hidden;
+    width: 100%;
 }
 
 .region.region-highlights .block .description {
@@ -699,9 +701,9 @@ input.form-submit {
 }
 
 .region.region-highlights .block {
-    background: #99a4a8 none repeat scroll 0 0;
+    background: rgba(154, 163, 168, 0.5) none repeat scroll 0 0;
     float: left;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     position: relative;
 }
 
