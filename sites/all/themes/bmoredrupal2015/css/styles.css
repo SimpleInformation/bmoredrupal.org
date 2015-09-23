@@ -72,7 +72,7 @@ ol li::after {
 
 #block-block-1 {
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
 	overflow: hidden; 
@@ -83,7 +83,7 @@ ol li::after {
 }
 
 .block.block-system.block-menu {
-    background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
     box-shadow: 0 0 3px #000;
     left: 0;
     position: fixed;
@@ -139,7 +139,7 @@ ol li::after {
     position: absolute;
     top: 6%;
     width: 1000px;
-    padding-top:65px;
+    padding-top:180px;
 }
 
 .logo-right {
@@ -192,6 +192,7 @@ a.btn.blue.big {
     text-align: center;
 }
 
+#highlights h2::before,
 #sponsors h2::before {
     background: #000 none repeat scroll 0 0;
     bottom: -23px;
@@ -203,6 +204,7 @@ a.btn.blue.big {
     width: 320px;
 }
 
+#highlights h2::after,
 #sponsors h2::after {
     background: #99A4A8 none repeat scroll 0 0;
     border: 5px solid #90defc;
@@ -302,7 +304,7 @@ a.btn.blue.big {
 
 #sponsors {
     background: #fff none repeat scroll 0 0;
-    padding: 10px 0;
+    border-top: 10px solid #000;
 }
 
 .parking-block  .content-left {
@@ -443,7 +445,39 @@ input.form-text:focus {
     font-style: normal;
  
 }
- 
+
+.front #main-wrapper #content-wrap {
+    background: #f5f5f5 none repeat scroll 0 0; 
+    width: 100%;
+}
+
+.front #main-wrapper{
+    position: relative;
+}
+
+.front #main-wrapper #content-wrap > div {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.front #highlights {
+    background: rgba(244, 65, 63, 0.5) none repeat scroll 0 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+#highlights > div {
+    margin: 0 auto;
+    text-align: center;
+    width: 1024px;
+}
+
+#highlights h2 {
+    color: #fff;
+    margin-bottom: 70px;
+    position: relative;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family:si;
@@ -569,6 +603,7 @@ input.form-text:focus {
     font-size: 14px;
     font-weight: 400;
     overflow: hidden;
+    position: relative;
     text-align: center;
 }
 
@@ -624,6 +659,68 @@ input.form-submit {
 	font-style: italic;
 }
 
+.region.region-highlights {
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.region.region-highlights .block.half-block.right{
+    float: right;
+}
+
+.region.region-highlights .block.half-block {
+    width: 48%;
+}
+
+.region.region-highlights .block .highlight-info > h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+}
+
+.region.region-highlights .block .highlight-info {
+    float: left;
+    height: 70px;
+    overflow: hidden;
+}
+
+.region.region-highlights .block .description {
+    background: rgba(154, 163, 168, 0.7) none repeat scroll 0 0;
+    bottom: 69px;
+    display: none;
+    font-size: 16px;
+    padding: 10px;
+    position: absolute;
+}
+
+.region.region-highlights .block:hover .description {
+    display: block;
+}
+
+.region.region-highlights .block {
+    background: #99a4a8 none repeat scroll 0 0;
+    float: left;
+    margin-bottom: 30px; 
+    position: relative;
+}
+
+.region.region-highlights .block.full-block {
+    width: 100%;
+}
+
+.region.region-highlights .block .highlight-date {
+    background: #2a95be none repeat scroll 0 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.region.region-highlights .block p {
+    margin: 0;
+}
+ 
 @media only screen and (max-width: 500px) {
 
 body { 

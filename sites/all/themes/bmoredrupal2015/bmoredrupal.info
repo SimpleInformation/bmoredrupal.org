@@ -8,6 +8,7 @@ engine = phptemplate
 
 regions[header] = Header  
 regions[content] = Content 
+regions[highlights] = Highlights
 regions[sponsors] = Sponsors
 regions[footer] = Footer
  

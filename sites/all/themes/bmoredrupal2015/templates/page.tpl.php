@@ -82,6 +82,14 @@
             </div>
             <!-- /#main --> 
         </div>
+		<div id="highlights">
+			<div class="highlights-container section">
+				<?php if ($page[ 'highlights']): ?>
+					<h2>Highlights</h2>
+					<?php print render($page[ 'highlights']); ?>
+				<?php endif; ?> 
+			</div> 
+		</div> 
 		<div id="sponsors">
 			<div class="sponsors-container section">
 				<?php print render($page[ 'sponsors']); ?>
